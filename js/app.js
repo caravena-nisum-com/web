@@ -1,26 +1,16 @@
-/*var main = function() {
-  Push the body and the nav over by 285px over 
-  $('.icon-menu').click(function() {
-    $('.menu').animate({
-      left: "0px"
-    }, 200);
-
-    $('body').animate({
-      left: "285px"
-    }, 200);
+var main = function() {
+  $('#submit').click(function(){
+      var user = $('#user').val();
+      if (user.length > 4 && user.length < 30) {
+        window.open('test.html');
+        //$("#body").load("test.html");
+        //window.location.href = 'html/test.html';
+        //alert(user+" is a correct name");
+      } else{
+          if (user.length <= 4) {alert('your name is short')};
+          if (user.length >= 30) {alert('your name is so long')};
+      };
   });
-
-  Then push them back
-  $('.icon-close').click(function() {
-    $('.menu').animate({
-      left: "-285px"
-    }, 200);
-
-    $('body').animate({
-      left: "0px"
-    }, 200);
-  });
-};*/
-
-
+  
+};
 $(document).ready(main);
