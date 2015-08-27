@@ -1,0 +1,26 @@
+/*We define the default body styling*/
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+/*We create the navbar style*/
+nav{
+	background-color: #333;
+	margin: 0;
+	overflow: hidden;
+}
+
+/*We add some style to the list element*/
+.pull-right {
+	position: relative;
+	float: right;
+	margin: 10;
+	padding-left: 10;
+}
+
+.pull-right li{
+	display: inline;
+	list-style-type: none;
+}

@@ -3,29 +3,31 @@
   <head>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
-    <link href='css\style.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-  	<div class="login">
-  		<section>
-  		<form name="login" action="index_submit" method="get" accept-charset="utf-8">
-            <ul>
-                <li>
-                    <label for="user">User</label>
-                    <input type="text" name="username" placeholder="username" required>
-                </li>
-                <li>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="password" required>
-                </li>
-                <li>
-                    <input type="submit" value="Login"></input>
-                </li>
-            </ul>
+    <nav>
+      <div class="login">
+        <section>
+        <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+          <ul class="pull-right">
+              <li>
+                  <!-- <label for="user">User</label> -->
+                  <input type="text" name="username" placeholder="username" required>
+              </li>
+              <li>
+                  <!-- <label for="password">Password</label> -->
+                  <input type="password" name="password" placeholder="password" required>
+              </li>
+              <li>
+                  <input type="submit" value="Login"></input>
+              </li>
+          </ul>
         </form>
-  		</section>
-  	</div>
+        </section>
+      </div>  
+    </nav>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="scripts\app.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
