@@ -5,11 +5,10 @@ describe("Login Happy Path",function(){
 		});
 	});
 });
-
 describe("Login with Validation errors",function(){
 	describe("Given a User",function(){
 		it("I want to validate username is shorter them 4",function(){
-			expect(validateLengthUser("abc123")).toBe(false)
+			expect(validateLengthUser("abc")).toBe(false)
 		});
 	});
 });
